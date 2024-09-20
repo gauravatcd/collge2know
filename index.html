@@ -81,7 +81,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
 
     <nav>
-        <a href="#about">About Us</a>
+        <a href="#about" onclick="gtag('event', 'contact_us_click', {
+  'event_category': 'engagement',
+  'event_label': 'Contact Us Button',
+  'value': 1
+});" >About Us</a>
         <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
     </nav>
