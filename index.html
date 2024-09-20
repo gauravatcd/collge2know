@@ -133,7 +133,11 @@
                     Engineering
                 </label>
             </div>
-            <button type="submit">Submit Stream Preference</button>
+            <button type="submit onclick="gtag('event', 'Submit', {
+              'event_category': 'Stream Preference',
+              'event_label': 'Stream Preference Form',
+              'value': 1
+            });"">Submit Stream Preference</button>
         </form>
     </section>
 
