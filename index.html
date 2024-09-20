@@ -72,6 +72,14 @@
             border: none;
             cursor: pointer;
         }
+        .radio-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+        }
     </style>
 </head>
 <body>
@@ -89,4 +97,65 @@
 
     <section id="about">
         <h2>About Our College</h2>
-        <p>The College of Knowledge is a premier institution committed to delivering high-quality education and preparing students for successful careers in various fields. Our campus is located in a serene environment, fostering an atmosphere of learning, collaboration, and innovation
+        <p>The College of Knowledge is a premier institution committed to delivering high-quality education and preparing students for successful careers in various fields. Our campus is located in a serene environment, fostering an atmosphere of learning, collaboration, and innovation.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Courses We Offer</h2>
+        <ul class="courses">
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Arts in Psychology</li>
+            <li>Master of Business Administration (MBA)</li>
+            <li>Diploma in Graphic Design</li>
+            <li>Ph.D. in Molecular Biology</li>
+        </ul>
+    </section>
+
+    <section id="stream-preference">
+        <h2>Select Your Stream Preference</h2>
+        <form action="#" method="POST">
+            <p class="radio-label">Which stream are you interested in?</p>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="stream" value="science" required>
+                    Science
+                </label>
+                <label>
+                    <input type="radio" name="stream" value="arts" required>
+                    Arts
+                </label>
+                <label>
+                    <input type="radio" name="stream" value="commerce" required>
+                    Commerce
+                </label>
+                <label>
+                    <input type="radio" name="stream" value="engineering" required>
+                    Engineering
+                </label>
+            </div>
+            <button type="submit">Submit Stream Preference</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College of Knowledge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
